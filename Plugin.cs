@@ -10,7 +10,7 @@ using System.Reflection;
 using R2CustomSounds;
 
 namespace Thompson {
-	[BepInPlugin("pl.szikaka.thompson", "Thompson Plugin", "1.0.0")]
+	[BepInPlugin("pl.szikaka.thompson", "Thompson Plugin", "1.0.1")]
 	public class ThompsonCorePlugin : BaseUnityPlugin {
 		
 		private static readonly int gun_model = 1005;
@@ -90,6 +90,9 @@ namespace Thompson {
 		}
 
 		private static System.Collections.IEnumerator fireRound(GunScript script) { //Firing is delayed one frame to allow the magazine to transfer round to the chamber
+			script.recoil_transfer_x = 0;
+			script.recoil_transfer_y = 0;
+
 			yield return null;
 
 			tryFireBullet.Invoke(script, new object[] { 1f });
