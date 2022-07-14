@@ -17,6 +17,14 @@ Copy the Thompson folder into the game persistent data directory: <br>
  
 You can spawn the gun in the compound using the debug menu, or run a provided campaign to use it in the dreaming. The gun will also be added into the random weapon pool in regular game.
 
+### Controls
+
+Typical semi-auto controls +
+ - **R** to pull back the slide
+ - **LMB** to release it, firing the gun
+ - **V** to toggle safety
+ - **F** to toggle selector switch (full auto / semi auto)
+
 ## Credits
  - Plugin written by SzikakA#3853
  - Model taken from https://grabcad.com/library/thompson-smg-3, converted by Mr_J_AND#6896, edited by me to better suit the game
